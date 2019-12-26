@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="products.xsd">
+  <category sign="shirt">
+
+    <subCategory>
+      <subject>
+        <producer>China</producer>
+        <model>sd234</model>
+        <start>10-01-2018</start>
+        <color>red</color>
+        <price>2000.50</price>
+        <quantity>10</quantity>
+      </subject>
+      <subject>
+        <producer>Russia</producer>
+        <model>sd555</model>
+        <start>12.11.2015</start>
+        <color>white</color>
+        <price>1000.30</price>
+        <quantity>15</quantity>
+      </subject>
+    </subCategory>
+  </category>
+
+  <category sign="skirt">
+    <subCategory>
+      <subject>
+        <producer>Korea</producer>
+        <model>sd999</model>
+        <start>17-09-2017</start>
+        <color>yellow</color>
+        <price>1500.10</price>
+        <quantity>20</quantity>
+      </subject>
+      <subject>
+        <producer>China</producer>
+        <model>sd222</model>
+        <start>25-08-2018</start>
+        <color>black</color>
+        <price>1300.00</price>
+        <quantity>14</quantity>
+      </subject>
+    </subCategory>
+  </category>
+
+</products>
