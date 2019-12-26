@@ -1,6 +1,7 @@
 package com.larionov.epam.service.impl;
 
 import com.larionov.epam.service.DoStax;
+
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
@@ -26,9 +27,9 @@ public class DoStaxImpl implements DoStax {
                     }
                 }
             }
-        } catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (XMLStreamException e){
+        } catch (XMLStreamException e) {
             e.printStackTrace();
         }
 

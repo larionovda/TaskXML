@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.larionov.epam.entity.ProductsType;
 import com.larionov.epam.service.JsonMapper;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -26,10 +27,10 @@ public class JsonMapperImpl implements JsonMapper {
         ProductsType productsType = null;
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            productsType =  objectMapper.readValue(new File(path), ProductsType.class);
-        } catch (JsonProcessingException e){
+            productsType = objectMapper.readValue(new File(path), ProductsType.class);
+        } catch (JsonProcessingException e) {
             e.printStackTrace();
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return productsType;

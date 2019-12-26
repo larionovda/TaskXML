@@ -7,5 +7,6 @@ import java.io.IOException;
 
 public interface JsonMapper {
     void serializableToJson(ProductsType productsType, String path) throws JsonProcessingException;
+
     ProductsType serializableToJava(String json) throws IOException;
 }
