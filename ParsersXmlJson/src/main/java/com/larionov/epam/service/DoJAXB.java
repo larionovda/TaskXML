@@ -6,5 +6,5 @@ import javax.xml.bind.JAXBException;
 import java.io.FileNotFoundException;
 
 public interface DoJAXB {
-    ProductsType unmarshal(String path) throws FileNotFoundException, JAXBException;
+    ProductsType unmarshal(String path);
 }

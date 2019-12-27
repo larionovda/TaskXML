@@ -6,7 +6,7 @@ import com.larionov.epam.entity.ProductsType;
 import java.io.IOException;
 
 public interface JsonMapper {
-    void serializableToJson(ProductsType productsType, String path) throws JsonProcessingException;
+    void serializableToJson(ProductsType productsType, String path);
 
-    ProductsType serializableToJava(String json) throws IOException;
+    ProductsType serializableToJava(String json) ;
 }

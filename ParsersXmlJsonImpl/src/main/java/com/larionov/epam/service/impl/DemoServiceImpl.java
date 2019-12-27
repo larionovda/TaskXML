@@ -16,7 +16,7 @@ public class DemoServiceImpl implements DemoService {
     private static final String PATH_TO_JSON = "xml/products.json";
 
     @Override
-    public void start() throws IOException, JAXBException {
+    public void start()  {
         ProductsType productsType = doJAXB.unmarshal(PATH_TO_XML);
         jsonMapper.serializableToJson(productsType, PATH_TO_JSON);
         System.out.println(jsonMapper.serializableToJava(PATH_TO_JSON));
