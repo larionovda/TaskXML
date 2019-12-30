@@ -9,12 +9,14 @@ import java.io.File;
 import java.io.IOException;
 
 public class JsonMapperImpl implements JsonMapper {
+    private final String PATH = "C:\\Users\\Dmitrii_Larionov\\IdeaProjects\\NewXML\\ParsersXmlJsonImpl\\src\\main\\resources\\products.json";
+
     @Override
     public void serializableToJson(ProductsType productsType, String path) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             String result = objectMapper.writeValueAsString(productsType);
-            objectMapper.writeValue(new File("xml/products.json"), productsType);
+            objectMapper.writeValue(new File(path), productsType);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         } catch (IOException e) {
