@@ -5,10 +5,7 @@ import com.larionov.epam.service.DemoService;
 import com.larionov.epam.service.DoJAXB;
 import com.larionov.epam.service.JsonMapper;
 import com.larionov.epam.service.PathToXML;
-
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 
 public class DemoServiceImpl implements DemoService {
     DoJAXB doJAXB = new DoJAXBImpl();
